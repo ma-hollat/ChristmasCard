@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    color: #FFF;
+    background: #777;
+    overflow: hidden;
+}
+
+.landing{
+    position: relative;
+    background-image: url('../img/tahvel.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.landing-dinner{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(19, 18, 18, 0.253);
+    text-align: center;
+    padding: 8rem;
+}
+
+.landing h1{
+    font-size: 3rem;
+    font-family: 'Mountains of Christmas';
+    font-weight: 700;
+}
+
+.countdown{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top:3rem;
+}
+
+.countdown div{
+    font-size: 1.6rem;
+    padding: 0.6rem;
+    border: 1px solid #FFF;
+    border-radius: 0.6rem;
+    margin:0.5rem;
+    opacity: 0.7;
+    background: rgba(19, 18, 18, 0.253);
+}
+
+.countdown span{
+    font-size: 1.6rem;
+}
+
+@media(max-width: 558px){
+    .landing h1{
+        font-size: 2rem;
+    }
+    .countdown{
+        font-size: 2rem;
+        font-weight: 900;
+        flex-direction: column;
+    }
+    .img{
+        visibility: hidden;
+    }
+    .countdown div{
+        font-size: 0.9rem;
+        padding: 0;
+        margin: 0.3rem;
+    }
+}
+
+.img{
+    position:absolute;
+    top: 30%;
+    left: 50%;
+}
